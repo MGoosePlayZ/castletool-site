@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Castletool</title>
+<meta name="description" content="Import full color images, videos, music, audio and more into the Castle app.">
+<meta name="theme-color" content="#15021E">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top" id="top">
+  <a class="brand" href="#top">
+    <img src="assets/icon.png" alt="" width="32" height="32" onerror="this.style.display='none'">
+    <span>Castletool</span>
+  </a>
+  <nav>
+    <a href="#install">Install</a>
+    <a href="#files">Support</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <h1>Castletool</h1>
+  <p class="tag">Bring Castle to its full potential</p>
+  <p class="lede">Castletool is a tool used for importing many things into the <a href="https://castle.xyz">Castle app</a>, such as full color images, videos, music, audio, and more.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://mgooseplayz.github.io/castletool-web">Open Web App</a>
+    <a class="btn" href="#install">Install</a>
+  </div>
+</section>
+
+<section id="install" class="block">
+  <h2>Installation</h2>
+  <div class="cols">
+    <article>
+      <h3>Android app</h3>
+      <p>Download and install the app from GitHub.</p>
+      <a class="btn primary" href="https://github.com/MGoosePlayZ/castletool-android/releases/latest/download/castletool-android.zip">Install the Android App</a>
+    </article>
+    <article>
+      <h3>Run the web app locally</h3>
+      <pre><code>git clone https://github.com/MGoosePlayZ/castletool-web
+cd castletool-web/docs
+python -m http.server 8000</code></pre>
+      <p>Then open <code>localhost:8000</code> in your browser.</p>
+    </article>
+    <article>
+      <h3>Install the CLI</h3>
+      <pre><code>pip install castletool
+castletool</code></pre>
+      <p>Needs Python and pip.</p>
+    </article>
+  </div>
+</section>
+
+<section id="files" class="block">
+  <h2>File support</h2>
+  <dl class="types">
+    <div><dt>Images</dt><dd>.png, .jpg / .jpeg, .bmp, .tif / .tiff, .ico, .heic / .heif, .gif, .webp, .apng</dd></div>
+    <div><dt>Video</dt><dd>.mp4, .mov, .webm, .avi, .mkv, .flv, .m4v, .3gp, .ogv</dd></div>
+    <div><dt>Vector graphics</dt><dd>.svg</dd></div>
+    <div><dt>Audio</dt><dd>.mp3, .wav, .ogg / .oga, .m4a, .flac, .aac</dd></div>
+    <div><dt>Fonts</dt><dd>.ttf, .otf, .woff, .eot</dd></div>
+    <div><dt>Archives</dt><dd>.zip, .tar, .tar.gz / .tgz, .tar.bz2 / .tbz2, .tar.xz / .txz</dd></div>
+  </dl>
+</section>
+
+<section id="faq" class="block">
+  <h2>Frequently asked questions</h2>
+  <details open><summary>Is Castletool a virus?</summary><p>No. Castletool is not, and never will be malicious. The source code is public on GitHub, so you can read it yourself.</p></details>
+  <details><summary>Is Castletool free?</summary><p>Yes. Every version is free to use.</p></details>
+  <details><summary>Which version should I use?</summary><p>The web version is the recommended platform for cross-platform compatibility, and the Android app is recommended for users that want a seamless experience. The CLI is no longer recommended due to it being inaccessible to most, and being updated less frequently.</p></details>
+  <details><summary>Can you import fonts?</summary><p>Well, kinda. Fonts are imported as a set of images, and not a native text blueprint, which is sad.</p></details>
+  <details><summary>Can you make an iOS app?</summary><p>No, I cannot. It would be too expensive and too much of a hassle to get it on the App Store, and sideloading would be too annoying for most users.</p></details>
+  <details><summary>Where do I report a bug or ask for a feature?</summary><p>Open an issue on the project's GitHub page.</p></details>
+</section>
+</main>
+
+<footer>
+  <table>
+    <thead><tr><th>Source Code</th><th>Castle</th><th>Goto</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://github.com/MGoosePlayZ/castletool-site">Site</a></td><td><a href="https://castle.xyz">Castle</a></td><td><a href="#top">Top</a></td></tr>
+      <tr><td><a href="https://github.com/MGoosePlayZ/castletool">CLI</a></td><td><a href="https://castle.xyz/terms">Terms</a></td><td><a href="#install">Install</a></td></tr>
+      <tr><td><a href="https://github.com/MGoosePlayZ/castletool-android">App</a></td><td><a href="https://castle.xyz/privacy_policy">Privacy</a></td><td><a href="#files">Support</a></td></tr>
+      <tr><td><a href="https://github.com/MGoosePlayZ/castletool-web">Web</a></td><td><a href="https://castle.xyz/colophon">Colophon</a></td><td><a href="#faq">FAQ</a></td></tr>
+    </tbody>
+  </table>
+  <p class="legal">Castletool is an independent, unofficial suite. It is not affiliated with, endorsed by, or sponsored by Castle or Montarey's Coast, Inc.</p>
+</footer>
+</body>
+</html>
